@@ -1,2 +1,2 @@
 # vision-hzn
-MVI Vision Edge and IEAM integration
+### Maximo Visual Inspection (MVI) Vision-Edge deployment using IBM Edge Application Manager(IEAM)
