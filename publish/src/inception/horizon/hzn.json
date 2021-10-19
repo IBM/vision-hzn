@@ -1,0 +1,8 @@
+{
+    "MetadataVars": {
+        "IMAGE_NAME": "vision-edge-inception",
+        "DOCKER_IMAGE": "$(CR_IBM_HOST)/$(CR_IBM_HOST_NAMESPACE)/vision-edge-inception_$(ARCH)",
+        "SERVICE_NAME": "$(EDGE_OWNER).$(EDGE_DEPLOY).vision-edge-inception",
+        "SERVICE_VERSION": "8.4.0"
+    }
+}

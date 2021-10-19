@@ -1,0 +1,11 @@
+{
+  "properties": [
+      { "name": "owner", "value": "ibm.edge" },
+      { "name": "deploy", "value": "example.vision-hzn" },
+      { "name": "ve.cme", "value": true },
+      { "name": "node.full", "value": true },
+      { "name": "openhorizon.allowPrivileged", "value": true }
+  ],
+  "constraints": [
+  ]
+}

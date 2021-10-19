@@ -1,0 +1,29 @@
+{
+    "org": "$HZN_ORG_ID",
+    "label": "$SERVICE_NAME for $ARCH",
+    "description": "",
+    "public": true,
+    "documentation": "",
+    "url": "$SERVICE_NAME",
+    "version": "$SERVICE_VERSION",
+    "arch": "$ARCH",
+    "sharable": "singleton",
+    "requiredServices": [
+    ],
+    "userInput": [
+	{ "name": "hostname", "label": "hostname", "type": "string", "defaultValue": "" },
+	{ "name": "runmode", "label": "runmode", "type": "string", "defaultValue": "hzn" }
+    ],
+    "deployment": {
+        "services": {
+            "$SERVICE_NAME": {
+                "image": "${DOCKER_IMAGE}:$SERVICE_VERSION",
+                "privileged": true,
+		"binds": [
+		    "$VE_HOST_SERVICE_ROOT:$CONTAINER_APP_ROOT",
+		    "$VE_HOST_SERVICE_ROOT/volume/run/var:$CONTAINER_APP_ROOT/var"
+                ]
+            }
+        }
+    }
+}

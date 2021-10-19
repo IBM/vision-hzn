@@ -1,0 +1,22 @@
+{
+    "services": [
+    {
+	"org": "$HZN_ORG_ID",
+	"url": "$EDGE_OWNER.$EDGE_DEPLOY.vision-edge-inception",
+	"versionRange": "[0.0.0,INFINITY)",
+	"variables": {
+	    "hostname"  : "$VE_HOSTNAME"
+	}
+    },
+    {
+	"org": "$HZN_ORG_ID",
+	"url": "vision-edge-controller",
+	"versionRange": "[0.0.0,INFINITY)",
+	"variables": {
+	    "DLE_SERVICE_IP": "$EDGE_OWNER.$EDGE_DEPLOY.vision-edge-dle",
+	    "HOSTNAME"   : "$VE_HOSTNAME",
+	    "SHMEM_SIZE" : $VE_CTRLSHMEM
+	}
+    }	
+    ]
+}

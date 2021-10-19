@@ -1,0 +1,41 @@
+{
+    "org": "$HZN_ORG_ID",
+    "label": "$SERVICE_NAME for $ARCH",
+    "description": "",
+    "public": true,
+    "documentation": "",
+    "url": "$SERVICE_NAME",
+    "version": "$SERVICE_VERSION",
+    "arch": "$ARCH",
+    "sharable": "singleton",
+    "requiredServices": [
+	{ "url": "$EDGE_OWNER.$EDGE_DEPLOY.vision-edge-inception", "org": "$HZN_ORG_ID", "version": "8.4.0", "versionRange": "8.4.0", "arch": "$ARCH" }
+    ],
+    "userInput": [
+	{ "name": "DLE_PORT", "label": "dle_port", "type": "int", "defaultValue": "9001" },
+	{ "name": "DLE_USE_SSL", "label": "dle_use_ssl", "type": "boolean", "defaultValue": "true" },
+	{ "name": "DLE_SSL_CERT", "label": "dle_ssl_crt", "type": "string", "defaultValue": "$CONTAINER_APP_ROOT/config/.ssl/visionedge.crt" },
+	{ "name": "DLE_SSL_KEY", "label": "dle_ssl_key", "type": "string", "defaultValue": "$CONTAINER_APP_ROOT/config/.ssl/visionedge.key" },
+	{ "name": "LOG_LEVEL", "label": "log_level", "type": "string", "defaultValue": "INFO" },
+	{ "name": "EDGE_HOSTNAME", "label": "edge_hostname", "type": "string", "defaultValue": "localhost" }
+    ],
+    "deployment": {
+        "services": {
+            "$SERVICE_NAME": {
+                "image": "${DOCKER_IMAGE}:$SERVICE_VERSION",
+                "privileged": true,
+		"ports": [
+		    {
+			"HostPort":"9001:9001/tcp",
+			"HostIP":"0.0.0.0"
+		    }
+		],
+		"binds": [
+		    "$VE_HOST_SERVICE_ROOT/volume/run/downloaded_models:$CONTAINER_APP_ROOT/downloaded_models",
+		    "$VE_HOST_SERVICE_ROOT/volume/run/deployed_models:$CONTAINER_APP_ROOT/deployed_models",
+		    "$VE_HOST_SERVICE_ROOT/volume/run/var/config/.ssl:$CONTAINER_APP_ROOT/config/.ssl"
+                ]
+            }
+        }
+    }
+}

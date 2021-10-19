@@ -1,0 +1,25 @@
+{
+    "label": "deploy-policy-vision-edge-cme-$ARCH",
+    "description": "A deploy policy for vision-edge-cme on $ARCH",
+    "service": {
+	"name": "vision-edge-cme",
+	"org": "$HZN_ORG_ID",
+	"arch": "$ARCH",
+	"serviceVersions": [
+	    {
+		"version": "8.4.0",
+		"priority":{}
+	    }
+	]
+    },
+    "properties": [
+    ],
+    "constraints": [
+	"owner == $EDGE_OWNER",
+	"deploy == $EDGE_DEPLOY",
+	"ve.cme == true",
+	"node.full == true"
+    ],
+    "userInput": [
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "label": "deploy-policy-vision-edge-dle-$ARCH",
+    "description": "A deploy policy for vision-edge-dle on $ARCH",
+    "service": {
+	"name": "$EDGE_OWNER.$EDGE_DEPLOY.vision-edge-dle",
+	"org": "$HZN_ORG_ID",
+	"arch": "$ARCH",
+	"serviceVersions": [
+	    {
+		"version": "8.4.0",
+		"priority":{}
+	    }
+	]
+    },
+    "properties": [
+    ],
+    "constraints": [
+	"owner == $EDGE_OWNER",
+	"deploy == $EDGE_DEPLOY",
+	"ve.dle == true",
+	"node.detect == true"
+    ],
+    "userInput": [
+    ]
+}

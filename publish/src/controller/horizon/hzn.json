@@ -1,0 +1,8 @@
+{
+    "MetadataVars": {
+        "IMAGE_NAME": "vision-edge-controller",
+        "DOCKER_IMAGE": "$(CR_IBM_HOST)/$(CR_IBM_HOST_NAMESPACE)/vision-edge-controller_$(ARCH)",
+        "SERVICE_NAME": "vision-edge-controller",
+        "SERVICE_VERSION": "8.4.0"
+    }
+}
