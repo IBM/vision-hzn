@@ -14,7 +14,7 @@ Additionally, IEAM based deployment can be done in two modes:
 
 1. Vision Edge Detector only - This deploys the main DLE detector container in addition to initial setup and provides full capability to run ML tasks (inferencing, classification, detection etc) based on separately deployed ML model. 
 
-2. Complete Vision Edge Application - In addition to above containers, controller and CME are also installed to provide UI and integration witn cloud deployed training server for model download, configuration, setting up inspection stations etc. 
+2. Complete Vision Edge Application - In addition to above containers, controller and CME are also installed to provide UI and integration with cloud deployed training server for model download, configuration, setting up inspection stations etc. 
 
 ### MVI Vision-Edge Deployment 
 
