@@ -10,8 +10,7 @@ This uses containers from MVI Vision Edge 8.4.0 releaae.
 ```
 2. Clone or copy this code locally on your dev machine, 
 
-3. Setup these ENVs to publish the service and policy 
-Put these ENV vars in a file to source them conveniently. These ENVs include ones required for register and additional ones.  
+3. Setup these ENVs to publish the service and policy. Put these ENV vars in a file to source them conveniently. These ENVs include the ones required for register and additional ones.  
 ```
 ### Prefix for the services naming convention 
 export EDGE_OWNER=<string-to-group-your-services> # e.g: sg.edge
