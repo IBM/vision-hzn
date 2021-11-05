@@ -1,6 +1,6 @@
 ### Maximo Visual Inspection (MVI) Vision-Edge deployment using IBM Edge Application Manager(IEAM)
 
-MVI Vision Edge is an edge deployable application and is used to do machine inferencing at the edge. This works with cloud deployed training server. Typical deployment of MVI Vision Edge requires setting up the edge node using a docker script that creates several directories to store configuration and database on the edge node. Another `startedge` script installs three additional docker containers using combinaton of docker run, docker network, docker exec and several other CLI commands. 
+MVI Vision Edge is an edge deployable application and is used to do machine inferencing at the edge. This works with cloud deployed training server. Typical deployment of MVI Vision Edge requires setting up the edge node using a docker script that creates several directories to store configuration and database on the edge node. Another `startedge` script installs three additional docker containers using combination of docker run, docker network, docker exec and several other CLI commands. 
 
 In this `IEAM based deployment` the MVI Vision Edge application deployment is fully automated using edge node policy.
 
@@ -19,7 +19,7 @@ Additionally, IEAM based deployment can be done in two modes:
 ### MVI Vision-Edge Deployment 
 
 #### Pre-requisite - `MUST DO`
-**Note:** Instruction to setup the edge device node is longer than the actual running of the application. You might have already done these steps. Review the steps and complete them as ncessary.
+**Note:** Instruction to setup the edge device node is longer than the actual running of the application. You might have already done these steps. Review the steps and complete them as necessary.
 
 1. This installation is currently tested on Ubuntu VM + P100 - x86/amd64 available in IBM Cloud. Setup an appropriate VM in IBM cloud under your account.
 
