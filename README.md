@@ -4,7 +4,7 @@ MVI Vision Edge is an edge deployable application and is used to do machine infe
 
 In this `IEAM based deployment` the MVI Vision Edge application deployment is fully automated using edge node policy.
 
-Typical deployment of MVI Vision Edge requires setting up the edge node using a docker script that creates several directories to store configuration and database on the edge node. Another `startedge` script installs three additional docker containers using combination of docker run, docker network, docker exec and several other CLI commands. 
+Typical deployment of MVI Vision Edge requires setting up the edge node using a docker script that creates several directories to store configuration and database on the edge node. Another `startedge` script installs three additional docker containers using combination of docker run, docker network, docker exec and several other CLI commands. IEAM based deployment simplifies the approach.
 
 The application has four docker containers:
 - Inception 
