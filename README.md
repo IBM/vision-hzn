@@ -23,7 +23,7 @@ Additionally, IEAM based deployment can be done in two modes:
 
 1. This installation is currently tested on Ubuntu VM + P100 - x86/amd64 available in IBM Cloud. Setup an appropriate VM in IBM cloud under your account.
 
-2. Login as `root` into the VM. Setup a non-root user account on the VM. Application will be run using `non-root` user. 
+2. Login as `root`. Setup a non-root user account on the VM. Application will be run using `non-root` user. 
 ```
 useradd -s /bin/bash -d /home/<username> -m -G sudo <username>
 usermod -g users <username>
@@ -47,7 +47,7 @@ sudo -s -E ./agent-install.sh -i 'css:'
 ```
 sudo usermod -aG docker <username>
 ```
-6. Logout and login back in for docker group to become effective
+6. Logout and login back in for docker group to become effective.
 
 7. Install/update nvidia driver on the VM. Verify that the following command works and shows similar output. If not then may follow steps outlined below to fix.
 ```
@@ -123,7 +123,7 @@ https://www.ibm.com/docs/en/maximo-vi/8.3.0?topic=planning-installing-docker-nvi
 `DO NOT move forward` until the edge node infrastruture is properly setup as above - `nvidia-smi` and `/etc/docker/daemon.json`
 
 #### To Register Node
-**NOTE:** Services and policies must be already published into IEAM Mgmt Hub into the organization. Click here for instructions to `register` the edge device node with MVI - Vision Edge Application
+**NOTE:** Services and policies must be already published into IEAM Mgmt Hub under your organization. Click here for instructions to `register` the edge device node with MVI - Vision Edge Application
 https://github.com/IBM/vision-hzn/register
 
 #### To Publish Service and Policy
