@@ -124,11 +124,11 @@ https://www.ibm.com/docs/en/maximo-vi/8.3.0?topic=planning-installing-docker-nvi
 
 #### To Register Node
 **NOTE:** Services and policies must be already published into IEAM Mgmt Hub under your organization. Click here for instructions to `register` the edge device node with MVI - Vision Edge Application
-https://github.com/IBM/vision-hzn/register
+https://github.com/IBM/vision-hzn/tree/main/register
 
 #### To Publish Service and Policy
 Click here for instructions to `publish` the `services and policies`
-https://github.com/IBM/vision-hzn/publish
+https://github.com/IBM/vision-hzn/tree/main/publish
 
 TODO:
 - Jetson Xavier NX (TBD) - arm64
