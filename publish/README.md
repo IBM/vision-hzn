@@ -14,7 +14,7 @@ This uses containers from MVI Vision Edge 8.4.0 releaae.
 ```
 ### Prefix for the services naming convention 
 export EDGE_OWNER=<string-to-group-your-services> # e.g: sg.edge
-export EDGE_DEPLOY=<string-to-group-your-services> # e.g: example.vision-edge
+export EDGE_DEPLOY=<string-to-group-your-services> # e.g: example.vision-hzn
 
 # Used in initialization
 export VE_HOSTNAME=`hostname -f`
