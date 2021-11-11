@@ -39,9 +39,10 @@ b0b28937633a   us.icr.io/ieam-mvi/vision-edge-inception_amd64    "/inception.sh"
 ```
 
 - Access the application using URL
-The first run of the application creates the username and password and is logged in root protected /var/log/syslog file. Run following command before registering the node for the first time to `grep` the credentials.
-
+The first run of the application creates the username and password and is logged in root protected `/var/log/syslog` file. Run following command before registering the node for the first time to `grep` the credentials.
+```
 sudo tail -f /var/log/syslog | grep -A 3 'username and password'
+```
 
 ```
 https://<vm.public.ip.address/
