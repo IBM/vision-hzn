@@ -93,7 +93,10 @@ nvidia-docker run --rm nvidia/cuda:10.2-base-ubuntu18.04 nvidia-smi
 ```
 *If not successful then reboot the VM and Run above command again before purging and starting the install again.
 
-You may also try searching for nvidia-driver versions such nas 460, 470 and install one of them.
+You may also try searching for nvidia-driver versions such as 460, 470 and install one of them.
+```
+sudo apt search nvidia-driver
+```
 
 *If not successful you may have to purge your nividia install and redo the steps as follows*
 ```
