@@ -23,7 +23,7 @@ export VE_CTRLSHMEM=$ctlrshmem
   - node.policy.cme.full.json
   - user.input.cme.full.json
 
-- Run following commmand to deploy full application.
+- Run following commmand to deploy full application. First run of the application may take about 4 minutes or more as all the images will be downloaded to the edeg -node  
 ```
 hzn register --policy node.policy.cme.full.json -f user.input.cme.full.json
 ```
