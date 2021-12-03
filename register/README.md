@@ -53,8 +53,12 @@ sudo grep -A 3 'username and password' /var/log/syslog
 ```
 https://<vm.public.ip.address/
 ``` 
+At this point the deployment of MVI Vision Edge is complete from IEAM point of view. Use the following document to complete the MVI Vision Edge setup with model and start using MVi Vision Edge.
 
-#### Register the edge device node as `Standalone Detector Only` (You may not want to use this option. Test purpose only)
+https://www.ibm.com/docs/en/maximo-vi/8.4.0?topic=edge-getting-started
+
+*************************************************************************************************************************************
+#### (Optional) Register the edge device node as `Standalone Detector Only` (You may not want to use this option. Test purpose only)
 - Copy these two files to your node from this repo 
 
   - node.policy.dle.detect.json
