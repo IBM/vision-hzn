@@ -122,6 +122,11 @@ nvidia-docker run --rm nvidia/cuda:10.2-base-ubuntu18.04 nvidia-smi
     }
 }
 ```
+9. Restart docker
+```
+sudo systemctl restart docker.service
+```
+
 #### Reference:
 MVI Vision-Edge Document 
 https://www.ibm.com/docs/en/maximo-vi/8.4.0
