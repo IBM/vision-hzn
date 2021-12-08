@@ -54,9 +54,7 @@ sudo usermod -aG docker <username>
 ```
 6. Logout and login back in for docker group to become effective.
 
-7. This step applies to Ubuntu VM + P100 and NOT Jetson NVidia Xavier NX. 
-
-   Install/update nvidia driver on the VM. Verify that the following command works and shows similar output. If not then may follow steps outlined below to fix.
+7. Install/update nvidia driver on the VM and Jetson Xavier using step 7.1 . Verify that the following command works and shows similar output on Ubuntu VM + P100. **Note** Verification using `nvidia-smi` applies to Ubuntu VM + P100 and NOT Jetson NVidia Xavier NX. If not then may follow steps outlined below to fix.
 ```
 nvidia-docker run --rm nvidia/cuda:10.2-base-ubuntu18.04 nvidia-smi
 ```
@@ -83,7 +81,7 @@ Thu Sep 16 23:55:34 2021
 |  No running processes found                                                 |
 +-----------------------------------------------------------------------------+
 ```
-**Steps to update nvidia drivers and docker**
+7.1 **Steps to update nvidia drivers and docker**
 ```
 curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
