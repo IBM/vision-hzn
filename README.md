@@ -149,10 +149,3 @@ https://github.com/IBM/vision-hzn/tree/main/register
 Click here for instructions to `publish` the `services and policies`
 https://github.com/IBM/vision-hzn/tree/main/publish
 
-TODO:
-- Jetson Xavier NX (TBD) - arm64
-- PowerPC RHEL - (TBD)
-
-
-
-
