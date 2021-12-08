@@ -23,7 +23,7 @@ Additionally, IEAM based deployment can be done in two modes:
 #### Pre-requisite - `MUST DO`
 **Note:** Instruction to setup the edge device node is longer than the actual running of the application. You might have already done these steps. Review the steps and complete them as necessary.
 
-1a. This installation is currently tested on 
+1. This installation is currently tested on 
 
 - Ubuntu VM + P100 - x86/amd64 available in IBM Cloud. Setup an appropriate VM in IBM cloud under your account.
 - NVidia Jetson Xavier NX - nvidia-jetpack 4.5.1-b17
