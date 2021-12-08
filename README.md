@@ -23,7 +23,10 @@ Additionally, IEAM based deployment can be done in two modes:
 #### Pre-requisite - `MUST DO`
 **Note:** Instruction to setup the edge device node is longer than the actual running of the application. You might have already done these steps. Review the steps and complete them as necessary.
 
-1. This installation is currently tested on Ubuntu VM + P100 - x86/amd64 available in IBM Cloud. Setup an appropriate VM in IBM cloud under your account.
+1a. This installation is currently tested on 
+
+- Ubuntu VM + P100 - x86/amd64 available in IBM Cloud. Setup an appropriate VM in IBM cloud under your account.
+- NVidia Jetson Xavier NX - nvidia-jetpack 4.5.1-b17
 
 2. Login as `root`. Setup a non-root user account on the VM. Application will be run using `non-root` user. 
 ```
@@ -51,7 +54,9 @@ sudo usermod -aG docker <username>
 ```
 6. Logout and login back in for docker group to become effective.
 
-7. Install/update nvidia driver on the VM. Verify that the following command works and shows similar output. If not then may follow steps outlined below to fix.
+7. This step applies to Ubuntu VM + P100 and NOT Jetson NVidia Xavier NX. 
+
+   Install/update nvidia driver on the VM. Verify that the following command works and shows similar output. If not then may follow steps outlined below to fix.
 ```
 nvidia-docker run --rm nvidia/cuda:10.2-base-ubuntu18.04 nvidia-smi
 ```
