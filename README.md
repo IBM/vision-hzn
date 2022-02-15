@@ -40,8 +40,8 @@ passwd <username>
 ```
 export HZN_ORG_ID=<HZN_ORG_ID>
 export HZN_EXCHANGE_USER_AUTH=iamapikey:<API_KEY_PROVIDED>
-export HZN_EXCHANGE_URL=https://cp-console.ieam42-edge-8e873dd4c685acf6fd2f13f4cdfb05bb-0000.us-south.containers.appdomain.cloud/edge-exchange/v1
-export HZN_FSS_CSSURL=https://cp-console.ieam42-edge-8e873dd4c685acf6fd2f13f4cdfb05bb-0000.us-south.containers.appdomain.cloud/edge-css
+export HZN_EXCHANGE_URL=<IEAM-MGMT-HUB>/edge-exchange/v1
+export HZN_FSS_CSSURL=<IEAM-MGMT-HUB>/edge-css
 curl -u "$HZN_ORG_ID/$HZN_EXCHANGE_USER_AUTH" -k -o agent-install.sh $HZN_FSS_CSSURL/api/v1/objects/IBM/agent_files/agent-install.sh/data
 chmod +x agent-install.sh
 sudo -s -E ./agent-install.sh -i 'css:'
