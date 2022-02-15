@@ -46,7 +46,7 @@ curl -u "$HZN_ORG_ID/$HZN_EXCHANGE_USER_AUTH" -k -o agent-install.sh $HZN_FSS_CS
 chmod +x agent-install.sh
 sudo -s -E ./agent-install.sh -i 'css:'
 ```
-**Reference:** https://www.ibm.com/support/knowledgecenter/SSFKVV_4.2/installing/automated_install.html
+**Reference:** https://www.ibm.com/docs/en/eam/4.3?topic=agent-automated-installation-registration
 
 5. Add above non-root user in docker group
 ```
