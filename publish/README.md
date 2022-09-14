@@ -32,7 +32,7 @@ export CONTAINER_APP_ROOT=/opt/ibm/vision-edge
 export APP_BIND_HORIZON_DIR=/var/local/horizon
 
 # Absolute path to a directory where vision edge specific files go for IEAM based deployment - config, models, db etc.
-export VE_HZN_HOST_SERVICE_ROOT=$APP_BIND_HORIZON_DIR/vision-edge
+export VE_HOST_SERVICE_ROOT=$APP_BIND_HORIZON_DIR/vision-edge
 
 # Authenticated IBM CR access ###
 export CR_IBM_HOST=us.icr.io
