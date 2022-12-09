@@ -2,7 +2,7 @@
 
 `DO NOT PUBLISH` container images into external docker repo. Use IBM Container Registry only with authentication. `COMPANY CONFIDENTIAL`.
 
-This uses containers from MVI Vision Edge 8.4.0 releaae. 
+This uses containers from MVI Vision Edge 8.4.0 release. 
 
 1. Setup code signing key (This is to be done once on the dev node)
 ```
