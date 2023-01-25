@@ -49,9 +49,10 @@ Or later on
 sudo grep -A 3 'username and password' /var/log/syslog
 ```
 
-- The application URL
+- The application URL. Depending upon how /etc/hosts is setup 
 ```
 https://<vm.public.ip.address/
+https://<hostname.local>
 ``` 
 At this point the deployment of MVI Vision Edge is complete from IEAM point of view. Use the following document to complete the MVI Vision Edge setup with model and start using MVi Vision Edge.
 
