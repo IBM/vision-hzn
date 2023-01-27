@@ -56,7 +56,7 @@ https://<hostname.local>
 ``` 
 At this point the deployment of MVI Vision Edge is complete from IEAM point of view. Use the following document to complete the MVI Vision Edge setup with model and start using MVi Vision Edge.
 
-https://www.ibm.com/docs/en/maximo-vi/8.4.0?topic=edge-getting-started
+https://www.ibm.com/docs/en/maximo-vi/continuous-delivery?topic=edge-getting-started
 
 *************************************************************************************************************************************
 #### (Optional) Register the edge device node as `Standalone Detector Only` (You may not want to use this option. Test purpose only)
